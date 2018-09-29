@@ -1,3 +1,16 @@
+User can select gender and body type or shape characteristics to retrieve data regarding unique styles.
+
+The user can retrieve data to help choose what is best to wear or avoid based on input of their body style characteristics for each style (business, athletic, casual, etc.)
+
+User can also go to a tips page for quick reference.
+
+User can select on clothing items returned and find them online (retailers etc.)
+
+User can request match suggestions for clothing items (what would be stylish with this coral buttoned up?)
+
+Polished and popping UI styling and format. It is about fashion and style.
+
+
 # Create React Express App
 
 ## About This Boilerplate

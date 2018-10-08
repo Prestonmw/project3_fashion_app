@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./styles/App.css";
+// import logo from "./logo.svg";
+import "../styles/App.css";
 import Example from "./components/card/cardBtn";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -9,7 +9,7 @@ class Home extends Component {
       return (
         <div className="Home">
           <div className="Home-header">
-            <img src={logo} className="Home-logo" alt="logo" />
+            {/* <img src={logo} className="Home-logo" alt="logo" /> */}
             <h2>Bourgeousie</h2>
           </div>
           <p className="Home-intro">

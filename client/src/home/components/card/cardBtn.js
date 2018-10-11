@@ -1,19 +1,32 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { withRouter } from "react-router-dom";
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 
-const Example = (props) => {
-  return (
-    <Card className="card1">
-        <CardImg top width="100%" src={props.image} alt="Card image cap" />
-        <CardBody>
-            <CardTitle>{props.title}</CardTitle>
-            <CardSubtitle>{props.subtitle}</CardSubtitle>
-            <CardText>{props.text}</CardText>
-            <Button>{props.buttonText}</Button>
-        </CardBody>
-    </Card>
-  );
-};
+class Example extends React.Component {
+  constructor (props) {
+    super(props);
 
-export default Example;
+    this.routeChange = this.routeChange.bind(this);
+  }
+
+  routeChange() {
+    this.props.history.push(this.props.btnhref);
+  }
+
+  render() {
+    return (
+      <Card className="card1">
+          <CardImg top width="100%" src={this.props.image} alt="Card image cap" />
+          <CardBody className="text-center">
+              <CardTitle>{this.props.title}</CardTitle>
+              <CardSubtitle>{this.props.subtitle}</CardSubtitle>
+              <CardText>{this.props.text}</CardText>
+              <Button onClick={this.routeChange}>{this.props.buttonText}</Button>
+          </CardBody>
+      </Card>
+    );
+  }
+
+}
+
+export default withRouter(Example);

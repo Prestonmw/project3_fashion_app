@@ -8,7 +8,7 @@
 }
 
 .Home-header {
-  background-color: rgb(231, 33, 33);
+  background-color: maroon;
   font-size: 20px;
   height: 150px;
   padding: 20px;
@@ -22,6 +22,26 @@
 @keyframes Home-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+.Home-header {
+  text-align: center;
+  font-family: "Lobster", cursive;
+  border: 20px black;
+
+}
+p {
+  text-align: center;
+  background-color: maroon;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 20px;
+
+}
+hr {
+  background-color: white;
+}
+.card1 {
+  border-color: white;
 }
 
 

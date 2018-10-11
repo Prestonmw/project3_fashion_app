@@ -22,13 +22,13 @@ class womans extends Component {
             </div>
             <div className="row">
                 <div className="col-4">
-                    <Example title="More to Adore" buttonText="That's Me!" btnhref="/womans" image="https://hips.hearstapps.com/esq.h-cdn.co/assets/17/29/1500644719-hdm079917esqwinstonbox6828.jpg?resize=980:*"  />
+                    <Example title="More to Adore" buttonText="That's Me!" btnhref="/womans" image="images/pretty_plus.jpg"/>
                 </div>
                 <div className="col-4">
-                    <Example title="Midling Sort" buttonText="That's Me!" btnhref="/womans" image="https://assets.vogue.com/photos/58917d04fb0604bf1f5c3701/master/w_1320,c_limit/date-night-dad-bodies-mark-duplass.jpg?resize=980:*" />
+                    <Example title="Midling Sort" buttonText="That's Me!" btnhref="/womans" image="images/medium_size.jpg"/>
                 </div>
                 <div className="col-4">
-                    <Example title="Pretty and Petite" buttonText="That's Me!" btnhref="/womans" image="https://smhttp-ssl-33667.nexcesscdn.net/manual/wp-content/uploads/2017/08/grey-suit-black-zip-up-white-converse-min.jpg?resize=980*" />
+                    <Example title="Pretty and Petite" buttonText="That's Me!" btnhref="/womans" image="images/petite.jpg"/>
                 </div>
             </div>
 
@@ -40,4 +40,4 @@ class womans extends Component {
         )
     
     }};
-export default mens;
+export default womans;

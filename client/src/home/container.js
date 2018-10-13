@@ -8,16 +8,15 @@ class Home extends Component {
   state = {
     images: [
         "./images/man_basic1.jpg",
-        "./images/woman_basic.jpg"
+        "./images/woman_basic.jpg",
+        "./images/Bouge_2.png"
     ]
  };
     render() {
       return (
         <div className="Home">
           <div className="Home-header">
-            <h2>Bourgeois</h2>
-            <hr>
-            </hr>
+           <img src={this.state.images[2]}/>
           </div>
           <p className="Home-intro">
             Make a Selection Below!

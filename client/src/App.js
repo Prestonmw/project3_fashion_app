@@ -8,7 +8,6 @@ import Mens from "./mens/container";
 const App = () => (
   <Router>
     <div>
-      {/* <Nav /> */}
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/womans" component={Womans} />

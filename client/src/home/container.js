@@ -14,14 +14,19 @@ class Home extends Component {
  };
     render() {
       return (
+        <div className="container">
         <div className="Home">
           <div className="Home-header">
            <img src={this.state.images[2]}/>
           </div>
+          <div className="row">
+          <div className="col-12">
           <p className="Home-intro">
-            Make a Selection Below!
-  
+          Welcome! Do you aspire to improve your look and further your lot in life? Click the picture that most resembles you to learn how!
           </p>
+          </div>
+          </div>
+          
           <div className="container">
             <div className="row">
               <div className="col-6">
@@ -32,6 +37,7 @@ class Home extends Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
       );
     }

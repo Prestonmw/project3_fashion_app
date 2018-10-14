@@ -22,8 +22,8 @@ class womans extends Component {
                 <div className="Home-header">
                         <img src={this.state.images[3]} />
                     </div>
-                <p className="Womans-intro">
-                     Welcome! Please choose your body-type below to get started!
+                <p className="Home-intro">
+                Now, please click your closest body type and we'll give you some examples of how to dress to kill.
                 </p>
             </div>
             <div className="row">
@@ -36,10 +36,7 @@ class womans extends Component {
                 <div className="col-4">
                     <Example title="Pretty and Petite" buttonText="That's Me!" btnhref="/womans" image={this.state.images[2]}/>
                 </div>
-            </div>
-
-            
-            
+            </div>                  
         </div>
 
         

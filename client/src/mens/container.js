@@ -23,13 +23,13 @@ class mens extends Component {
                     <div className="Home-header">
                         <img src={this.state.images[3]} />
                     </div>
-                    <p className="Mens-intro">
-                        Welcome! Please choose your body-type below to get started!
-                </p>
+                    <p className="Home-intro">
+                        Now, please click your closest body type and we'll give you some examples of how to dress to kill.
+                        </p>
                 </div>
                 <div className="row">
                     <div className="col-4">
-                        <Example title="Big Fellas" buttonText="That's Me!" btnhref="/mens" image={this.state.images[0]} />
+                        <Example title="Big Fellas" buttonText="That's Me!" btnhref="/mensbig" image={this.state.images[0]} />
                     </div>
                     <div className="col-4">
                         <Example title="Middle of the Road" buttonText="That's Me!" btnhref="/mens" image={this.state.images[1]} />

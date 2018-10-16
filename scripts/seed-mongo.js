@@ -10,11 +10,21 @@ const objects = [
         imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2016-01/19/17/enhanced/webdr09/enhanced-10994-1453241408-9.jpg?downsize=800:*&output-format=auto&output-quality=auto",
         category: "mensbig",
         title: "Mr Poo Pants"
+    },
+    {
+        imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2016-01/19/17/enhanced/webdr09/enhanced-10994-1453241408-9.jpg?downsize=800:*&output-format=auto&output-quality=auto",
+        category: "womansbig",
+        title: "Ms Poo Pants"
+    },
+    {
+        imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2016-01/19/17/enhanced/webdr09/enhanced-10994-1453241408-9.jpg?downsize=800:*&output-format=auto&output-quality=auto",
+        category: "womansbig",
+        title: "Ms Lazy Pants"
     }
 ];
 
 module.exports = function () {
-    if (false) {
+    if (true) {
         for (let i = 0; i < objects.length; i++) {
             const model = new db.body({
                 image_URL: objects[i].imageUrl,

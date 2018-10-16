@@ -5,25 +5,28 @@ import Example from "../home/components/card/cardBtn";
 import API from "../utils/API";
 import Navbar from "../navbar/navbar";
 
-class Mensbig extends Component {
+class StyleCard extends Component {
 
-    state = {
-        pins: [],
-        id: "",
-        images: [
-            "./images/Bouge_2.png"
-        ]
-    };
+
+     constructor(props){
+         super(props);
+            this.state = {
+                pins: [],
+                id: "",
+                images: [
+                    "./images/Bouge_2.png"
+            ]
+        };
+     };
 
     componentDidMount() {
         this.loadPins();
     };
 
     loadPins = () => {
-        API.getPinCat("mensbig")
+        API.getPinCat(this.props.category)
             .then(res => {
                 if (res.data) {
-                    console.log("hey");
                     this.setState({
                         pins: res.data
                     });
@@ -67,4 +70,4 @@ class Mensbig extends Component {
         )
     }
 };
-export default Mensbig;
+export default StyleCard;

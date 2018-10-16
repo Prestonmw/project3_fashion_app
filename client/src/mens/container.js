@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import logo from "./logo.svg";
 import "../styles/App.css";
 import Example from "../home/components/card/cardBtn";
-
+import Navbar from "../navbar/navbar";
 
 
 class mens extends Component {
@@ -19,6 +19,7 @@ class mens extends Component {
     render() {
         return (
             <div className="container">
+             <Navbar/>
                 <div className="Home">
                     <div className="Home-header">
                         <img src={this.state.images[3]} />
@@ -32,10 +33,10 @@ class mens extends Component {
                         <Example title="Big Fellas" buttonText="That's Me!" btnhref="/mensbig" image={this.state.images[0]} />
                     </div>
                     <div className="col-4">
-                        <Example title="Middle of the Road" buttonText="That's Me!" btnhref="/mens" image={this.state.images[1]} />
+                        <Example title="Middle of the Road" buttonText="That's Me!" btnhref="/mensmedium" image={this.state.images[1]} />
                     </div>
                     <div className="col-4">
-                        <Example title="Skinny Non-fat Tall Hombre" buttonText="That's Me!" btnhref="/mens" image={this.state.images[2]} />
+                        <Example title="Skinny Non-fat Tall Hombre" buttonText="That's Me!" btnhref="/menssmall" image={this.state.images[2]} />
                     </div>
                 </div>
 

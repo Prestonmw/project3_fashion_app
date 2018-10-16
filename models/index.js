@@ -1,3 +1,3 @@
 module.exports = {
-  Mensbig: require("./mensbig")
+  body: require("./body")
 };

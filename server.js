@@ -6,6 +6,7 @@ const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const db = require("./models");
+const initialize = require("./scripts/seed-mongo");
 
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -23,7 +24,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Pins", { useNew
   if (err) {
     console.log("could not connect to database:" + JSON.stringify(err));
   } else {
+    initialize();
     console.log("connected to db");
+    
   }
 });
 

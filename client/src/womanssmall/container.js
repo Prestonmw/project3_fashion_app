@@ -5,7 +5,7 @@ import Example from "../home/components/card/cardBtn";
 import API from "../utils/API";
 import Navbar from "../navbar/navbar";
 
-class Mensbig extends Component {
+class Womanssmall extends Component {
 
     state = {
         pins: [],
@@ -20,7 +20,7 @@ class Mensbig extends Component {
     };
 
     loadPins = () => {
-        API.getPinCat("mensbig")
+        API.getPinCat("womanssmall")
             .then(res => {
                 if (res.data) {
                     console.log("hey");
@@ -67,4 +67,4 @@ class Mensbig extends Component {
         )
     }
 };
-export default Mensbig;
+export default Womanssmall;

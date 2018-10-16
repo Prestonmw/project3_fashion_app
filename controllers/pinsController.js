@@ -9,11 +9,11 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
+
   findByCat: function(req, res) {
-    db.Mensbig
-      .find({})
+    db.body
+      .find({category: req.params.category })
       .then(function (dbModel) {
-        console.log("success");
         res.json(dbModel); 
       })
       .catch(err => res.status(422).json(err));

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "../styles/App.css";
 import Example from "./components/card/cardBtn";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "../navbar/navbar";
 
 class Home extends Component {
   state = {
@@ -15,6 +16,7 @@ class Home extends Component {
     render() {
       return (
         <div className="container">
+        <Navbar/>
         <div className="Home">
           <div className="Home-header">
            <img src={this.state.images[2]}/>

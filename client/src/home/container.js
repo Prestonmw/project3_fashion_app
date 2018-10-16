@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "../styles/App.css";
 import Example from "./components/card/cardBtn";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navbar from "../navbar/navbar";
 
 class Home extends Component {
   state = {
@@ -14,14 +15,20 @@ class Home extends Component {
  };
     render() {
       return (
+        <div className="container">
+        <Navbar/>
         <div className="Home">
           <div className="Home-header">
            <img src={this.state.images[2]}/>
           </div>
+          <div className="row">
+          <div className="col-12">
           <p className="Home-intro">
-            Make a Selection Below!
-  
+          Welcome! Do you aspire to improve your look and further your lot in life? Click the picture that most resembles you to learn how!
           </p>
+          </div>
+          </div>
+          
           <div className="container">
             <div className="row">
               <div className="col-6">
@@ -32,6 +39,7 @@ class Home extends Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
       );
     }

@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 // import logo from "./logo.svg";
 import "../styles/App.css";
-import Example from "../home/components/card/cardBtn";
+import StyleCard from "./components/card/style-card";
 import API from "../utils/API";
 import Navbar from "../navbar/navbar";
 
-class StyleCard extends Component {
-
+class StylePage extends Component {
 
      constructor(props){
          super(props);
@@ -44,7 +43,7 @@ class StyleCard extends Component {
     render() {
         return (
             <div className="container">
-            <Navbar/>
+                <Navbar/>
                 <div className="Home">
                     <div className="Home-header">
                         <img src={this.state.images[0]} />
@@ -56,7 +55,7 @@ class StyleCard extends Component {
                 <div className="row">
                     <div className="col-4">
                         {this.state.pins.map(pin =>
-                            <Example
+                            <StyleCard
                                 key={Math.random().toString()}
                                 title={pin.title}
                                 buttonText=""
@@ -70,4 +69,4 @@ class StyleCard extends Component {
         )
     }
 };
-export default StyleCard;
+export default StylePage;

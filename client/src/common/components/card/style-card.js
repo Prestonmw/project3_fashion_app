@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from "react-router-dom";
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 
-class Example extends React.Component {
+class StyleCard extends React.Component {
   constructor (props) {
     super(props);
 
@@ -29,4 +29,4 @@ class Example extends React.Component {
 
 }
 
-export default withRouter(Example);
+export default withRouter(StyleCard);

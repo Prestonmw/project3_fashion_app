@@ -24,7 +24,7 @@ const objects = [
 ];
 
 module.exports = function () {
-    if (true) {
+    if (false) {
         for (let i = 0; i < objects.length; i++) {
             const model = new db.body({
                 image_URL: objects[i].imageUrl,

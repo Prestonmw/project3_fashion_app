@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import logo from "./logo.svg";
 import "../styles/App.css";
-import Example from "./components/card/cardBtn";
+import StyleCard from "../common/components/card/style-card";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "../navbar/navbar";
 
@@ -32,10 +32,10 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className="col-6">
-                <Example title="Men's" subtitle="" text="" buttonText="Click Me" btnhref="/mens" image={this.state.images[0]} />
+                <StyleCard title="Men's" subtitle="" text="" buttonText="Click Me" btnhref="/mens" image={this.state.images[0]} />
               </div>
               <div className="col-6">
-                <Example title="Women's" subtitle="" text="" buttonText="Click Me" btnhref="/womans" image={this.state.images[1]} />
+                <StyleCard title="Women's" subtitle="" text="" buttonText="Click Me" btnhref="/womans" image={this.state.images[1]} />
               </div>
             </div>
           </div>

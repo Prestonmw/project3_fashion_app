@@ -13,23 +13,22 @@ class mens extends Component {
            "./images/tall1.jpg"
        ]
     };
-
     
     render() {
         return (
-        <div className="container">
-            <div className="Home">
-                <div className="Home-header">
-              {/* <img src={logo} className="Home-logo" alt="logo" /> */}
-                     <h2>Bourgeois</h2>
+    <div className="container">
+        <div className="Home">
+           <div className="Home-header">
+              <h2>Bourgeois</h2>
+                 <hr></hr>
             </div>
                 <p className="Mens-intro">
                      Welcome! Please choose your body-type below to get started!
                 </p>
-            </div>
+        </div>
             <div className="row">
                 <div className="col-4">
-                    <Example title="Big Fellas" buttonText="That's Me!" btnhref="/mens" image={this.state.images[0]}  />
+                    <Example title="Big Fellas" buttonText="That's Me!" btnhref="/bigmen" image={this.state.images[0]}  />
                 </div>
                 <div className="col-4">
                     <Example title="Middle of the Road" buttonText="That's Me!" btnhref="/mens" image={this.state.images[1]} />

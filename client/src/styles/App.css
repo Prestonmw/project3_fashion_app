@@ -35,13 +35,17 @@ p {
   color: white;
   font-family: 'Abril Fatface', cursive;
   font-size: 20px;
-
 }
 hr {
   background-color: white;
 }
 .card1 {
   border-color: white;
+}
+#comp2 {
+  padding: 20px;
+  border-color: black;
+  border: 10px;
 }
 
 

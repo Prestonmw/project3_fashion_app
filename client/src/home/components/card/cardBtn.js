@@ -11,7 +11,8 @@ class Example extends React.Component {
 
   routeChange() {
     this.props.history.push(this.props.btnhref);
-  }
+    console.log("I was clicked")};
+  
 
   render() {
     return (

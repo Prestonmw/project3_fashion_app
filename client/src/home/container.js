@@ -13,17 +13,15 @@ class Home extends Component {
  };
     render() {
       return (
+      <div className="container">
         <div className="Home">
-          <div className="Home-header">
-            <h2>Bourgeois</h2>
-            <hr>
-            </hr>
-          </div>
-          <p className="Home-intro">
-            Make a Selection Below!
-  
-          </p>
-          <div className="container">
+            <div className="Home-header">
+              <h2>Bourgeois</h2>
+                  <hr></hr>
+            </div>
+              <p className="Home-intro">
+                Make a Selection Below!
+              </p>
             <div className="row">
               <div className="col-6">
                 <Example title="Men's" subtitle="" text="" buttonText="Click Me" btnhref="/mens" image={this.state.images[0]} />
@@ -32,8 +30,8 @@ class Home extends Component {
                 <Example title="Women's" subtitle="" text="" buttonText="Click Me" btnhref="/womans" image={this.state.images[1]} />
               </div>
             </div>
-          </div>
         </div>
+      </div>
       );
     }
   }

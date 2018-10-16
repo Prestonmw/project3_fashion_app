@@ -1,3 +1,3 @@
 module.exports = {
-    Pins: require("./pins")
-  };
+  Mensbig: require("./mensbig")
+};

@@ -9,8 +9,11 @@ router.route("/")
 // Matches with "/api/pins/category"
 router
   .route("/category")
-  .get(pinsController.findByCat)
-  .put(pinsController.update)
-  .delete(pinsController.remove);
+    .put(pinsController.update)
+    .delete(pinsController.remove);
+
+router
+  .route("/category/:category")
+    .get(pinsController.findByCat);
 
 module.exports = router;

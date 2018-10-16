@@ -10,9 +10,12 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   findByCat: function(req, res) {
-    db.Pins
-      .findByCat(req.params.category)
-      .then(dbModel => res.json(dbModel))
+    db.Mensbig
+      .find({})
+      .then(function (dbModel) {
+        console.log("success");
+        res.json(dbModel); 
+      })
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {

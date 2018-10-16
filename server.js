@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const PORT = process.env.PORT || 3001;
 const app = express();
+const db = require("./models");
 
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -18,8 +19,13 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/pinterestpins");
-
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/Pins", { useNewUrlParser: true }, function(err) {
+  if (err) {
+    console.log("could not connect to database:" + JSON.stringify(err));
+  } else {
+    console.log("connected to db");
+  }
+});
 
 // Send every other request to the React app
 // Define any API routes before this runs

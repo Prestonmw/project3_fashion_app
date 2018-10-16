@@ -7,7 +7,7 @@ export default {
   },
   // Gets the pin with the given category
   getPinCat: function(category) {
-    return axios.get("/api/pins/" + category);
+    return axios.get("/api/pins/category/" + category);
   },
   // Deletes the pin with the given id
   deletePins: function(id) {

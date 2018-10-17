@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import logo from "./logo.svg";
 import "../styles/App.css";
-import Example from "../home/components/card/cardBtn";
+import StyleCard from "../common/components/card/style-card";
 import Navbar from "../navbar/navbar";
 
 
@@ -15,7 +15,6 @@ class mens extends Component {
             "./images/menstips.jpg"
         ]
     };
-
 
     render() {
         return (
@@ -31,13 +30,13 @@ class mens extends Component {
                 </div>
                 <div className="row">
                     <div className="col-4">
-                        <Example title="Big Fellas" buttonText="That's Me!" btnhref="/mensbig" image={this.state.images[0]} />
+                        <StyleCard title="Big Fellas" buttonText="That's Me!" btnhref="/mensbig" image={this.state.images[0]} />
                     </div>
                     <div className="col-4">
-                        <Example title="Middle of the Road" buttonText="That's Me!" btnhref="/mensmedium" image={this.state.images[1]} />
+                        <StyleCard title="Middle of the Road" buttonText="That's Me!" btnhref="/mensmedium" image={this.state.images[1]} />
                     </div>
                     <div className="col-4">
-                        <Example title="Skinny Non-fat Tall Hombre" buttonText="That's Me!" btnhref="/menssmall" image={this.state.images[2]} />
+                        <StyleCard title="Skinny Non-fat Tall Hombre" buttonText="That's Me!" btnhref="/menssmall" image={this.state.images[2]} />
                     </div>
                 </div>
 

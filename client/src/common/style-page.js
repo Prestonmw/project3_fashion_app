@@ -1,29 +1,33 @@
 import React, { Component } from "react";
 // import logo from "./logo.svg";
 import "../styles/App.css";
-import Example from "../home/components/card/cardBtn";
+import StyleCard from "./components/card/style-card";
 import API from "../utils/API";
 import Navbar from "../navbar/navbar";
+import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 
-class Mensbig extends Component {
 
-    state = {
-        pins: [],
-        id: "",
-        images: [
-            "./images/Bouge_2.png"
-        ]
-    };
+class StylePage extends Component {
+
+     constructor(props){
+         super(props);
+            this.state = {
+                pins: [],
+                id: "",
+                images: [
+                    "./images/Bouge_2.png"
+            ]
+        };
+     };
 
     componentDidMount() {
         this.loadPins();
     };
 
     loadPins = () => {
-        API.getPinCat("mensbig")
+        API.getPinCat(this.props.category)
             .then(res => {
                 if (res.data) {
-                    console.log("hey");
                     this.setState({
                         pins: res.data
                     });
@@ -41,7 +45,7 @@ class Mensbig extends Component {
     render() {
         return (
             <div className="container">
-            <Navbar/>
+                <Navbar/>
                 <div className="Home">
                     <div className="Home-header">
                         <img src={this.state.images[0]} />
@@ -51,20 +55,14 @@ class Mensbig extends Component {
                     </p>
                 </div>
                 <div className="row">
-                    <div className="col-4">
-                        {this.state.pins.map(pin =>
-                            <Example
-                                key={Math.random().toString()}
-                                title={pin.title}
-                                buttonText=""
-                                btnhref=""
-                                image={pin.image_URL}
-                            />
-                        )}
-                    </div>
+                    {this.state.pins.map(pin =>
+                        <Card className="col-4" data-title={pin.title}>
+                            <CardImg top width="100%" src={pin.image_URL} alt="Card image cap" />
+                        </Card>
+                    )}
                 </div>
             </div>
         )
     }
 };
-export default Mensbig;
+export default StylePage;

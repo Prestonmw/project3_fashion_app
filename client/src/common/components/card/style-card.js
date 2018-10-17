@@ -15,7 +15,7 @@ class StyleCard extends React.Component {
 
   render() {
     return (
-      <Card className="card1">
+      <Card>
           <CardImg top width="100%" src={this.props.image} alt="Card image cap" />
           <CardBody className="text-center">
               <CardTitle>{this.props.title}</CardTitle>

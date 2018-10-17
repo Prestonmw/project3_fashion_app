@@ -42,15 +42,11 @@ class mens extends Component {
 
                 <div className="row">
                     <div className="col-12">
-                        <Example title="Tips" buttonText="Halp me!" btnhref="https://www.artofmanliness.com/articles/101-style-tips-men/" image={this.state.images[4]} />
+                        <StyleCard title="Tips" buttonText="Halp me!" btnhref="https://www.artofmanliness.com/articles/101-style-tips-men/" image={this.state.images[4]} />
                     </div>                   
                 </div>
 
-                <iframe width="100%" height="500" src="https://www.youtube.com/embed/aCyY7AueuhE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <iframe width="100%" height="500" src="https://www.youtube.com/embed/FiAubtXLnFs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <iframe width="100%" height="500" src="https://www.youtube.com/embed/pUh9A41Qz10" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <iframe width="100%" height="500" src="https://www.youtube.com/embed/8lLKig_X3ZQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                <iframe width="100%" height="500" src="https://www.youtube.com/embed/3vBVwqLqe0o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+               
             </div>
 
 

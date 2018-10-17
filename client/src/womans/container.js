@@ -43,15 +43,11 @@ class womans extends Component {
 
             <div className="row">
                 <div className="col-12">
-                    <Example title="Tips" buttonText="Halp me!" btnhref="https://www.pinterest.com/christajean318/womens-style-tips/?lp=true" image={this.state.images[4]} />
+                    <StyleCard title="Tips" buttonText="Halp me!" btnhref="https://www.pinterest.com/christajean318/womens-style-tips/?lp=true" image={this.state.images[4]} />
                 </div>                   
               </div>  
 
-              <iframe width="100%" height="500" src="https://www.youtube.com/embed/A1Z5ES3ZIH4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              <iframe width="100%" height="500" src="https://www.youtube.com/embed/leSicM57gE4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              <iframe width="100%" height="500" src="https://www.youtube.com/embed/bpNcuh_BnsA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              <iframe width="100%" height="500" src="https://www.youtube.com/embed/UNBg3XTDz-U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              <iframe width="100%" height="500" src="https://www.youtube.com/embed/32MPtIvd9nI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              
         </div>
 
         

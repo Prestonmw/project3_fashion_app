@@ -4,7 +4,13 @@ import Home from "./home/container";
 import Womans from "./womans/container";
 import Mens from "./mens/container";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import Bigmen from "./mens/bigman";
+=======
+import StylePage from "./common/style-page";
+
+
+>>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1
 =======
 import StylePage from "./common/style-page";
 
@@ -20,14 +26,20 @@ const App = () => (
         <Route exact path="/womans" component={Womans} />
         <Route exact path="/mens" component={Mens} />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <Route exact path="/bigmen" component={Bigmen} />
 =======
+=======
+>>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1
         <Route exact path="/mensbig" render={(props) => <StylePage { ...props } category="mensbig"/>}  />
         <Route exact path="/mensmedium" render={(props) => <StylePage { ...props } category="mensmedium"/>}  />
         <Route exact path="/menssmall" render={(props) => <StylePage { ...props } category="menssmall"/>}  />
         <Route exact path="/womansbig" render={(props) => <StylePage { ...props } category="womansbig"/>}  />
         <Route exact path="/womansmedium" render={(props) => <StylePage { ...props } category="womansmedium"/>}  />
         <Route exact path="/womanssmall" render={(props) => <StylePage { ...props } category="womanssmall"/>}  />
+<<<<<<< HEAD
+>>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1
+=======
 >>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1
       </Switch>
     </div>

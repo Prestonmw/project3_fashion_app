@@ -20,7 +20,11 @@
   },
   "dependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "@google-cloud/vision": "^0.22.1",
+=======
+    "axios": "^0.18.0",
+>>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1
 =======
     "axios": "^0.18.0",
 >>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1

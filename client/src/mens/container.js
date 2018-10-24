@@ -16,6 +16,7 @@ class mens extends Component {
         ]
     };
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     render() {
         return (
@@ -36,6 +37,11 @@ class mens extends Component {
 
     render() {
         return (
+=======
+
+    render() {
+        return (
+>>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1
             <div className="container">
              <Navbar/>
                 <div className="Home">
@@ -45,6 +51,9 @@ class mens extends Component {
                     <p className="Home-intro">
                         Now, please click your closest body type and we'll give you some examples of how to dress to kill.
                         </p>
+<<<<<<< HEAD
+>>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1
+=======
 >>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1
                 </div>
                 <div className="row">

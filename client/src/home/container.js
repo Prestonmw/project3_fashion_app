@@ -16,6 +16,7 @@ class Home extends Component {
     render() {
       return (
 <<<<<<< HEAD
+<<<<<<< HEAD
       <div className="container">
         <div className="Home">
             <div className="Home-header">
@@ -26,6 +27,8 @@ class Home extends Component {
                 Make a Selection Below!
               </p>
 =======
+=======
+>>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1
         <div className="container">
         <Navbar/>
         <div className="Home">
@@ -52,7 +55,11 @@ class Home extends Component {
             </div>
         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
       </div>
+=======
+        </div>
+>>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1
 =======
         </div>
 >>>>>>> 6100ed2f638f08ebe8b203d66cada7a6fb11d9f1
